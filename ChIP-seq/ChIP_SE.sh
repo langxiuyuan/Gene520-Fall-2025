@@ -1,5 +1,6 @@
 #!/bin/bash
 genome=$1
+fastq=$2
 
 lib=/mnt/jinstore/JinLab03/xxl1432/HiCorr_Deeploop/14.Gene520/Gene520-Fall-2025/ChIP-seq/lib
 
@@ -7,7 +8,7 @@ chrom_size=$lib/$genome.chrom.sizes
 #--------map raw fastq file to reference genome----------------
 
 for file in `ls *.fastq`;do
-    perl $lib/bowtie_fastq.pl mm10 8 SRR11245551_1.fastq # fastq --> sam
+    perl $lib/bowtie_fastq.pl mm10 8 $fastq # fastq --> sam
 done
 
 #-----------Sam file to sorted mapped bam file----------------
