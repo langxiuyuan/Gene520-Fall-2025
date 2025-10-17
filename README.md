@@ -8,11 +8,9 @@
 This repository contains a curated collection of scripts and utility tools that I have used throughout my research. These scripts are primarily geared toward data processing tasks related to Hi-C, RNA-seq, and ChIP-seq.
 
 
-# 🛠️ Git Command Line
-```ruby
-git config --global user.email langxiuyuan@gmail.com
-git config --global user.name 'Xiuyuan Lang'
-```
+
+# Shell Commands 
+
 |Command| Description |
 | --------------- | ----------------- |
 |`git status` | View current changes  |
@@ -46,22 +44,3 @@ git config --global user.name 'Xiuyuan Lang'
 |`rsync -avh --no-times xxl1432@hpctransfer1.case.edu:/scratch/pbsjobs/xxl1432/ /home/xxl1432/`    | Rsync the data from hpc to hiview10   |
 |`find . -exec touch  {} \;` |  Recursively update the timestamps of every folder and file, but not for hidden files |
 
-
-# C.Shark Command Line
-```ruby
-git pull
-uv pip install .[training] --no-deps
-os.environ['CUDA_VISIBLE_DEVICES'] = '-1'  do not use the GPU
-```
-
-# GPU info
-|Nodelist| VRam |
-| -------- | ------ |
-|dgxt001 | 40G  |
-|4v100   | 32G  |
-|gpup100 | 12G  |
-|2080    | 8G   |
-|gpul40s | 48G  |
-|h100    | 80G  |
-
-5kb model with 5 batch size ususally request 48G vram
