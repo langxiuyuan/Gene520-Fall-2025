@@ -7,7 +7,7 @@ lib=./lib
 chrom_size=$lib/$genome.chrom.sizes
 #--------map raw fastq file to reference genome----------------
 
-perl $lib/bowtie_fastq.pl mm10 8 $fastq # fastq --> sam
+perl $lib/bowtie_fastq.pl mm10 8 $file # fastq --> sam
 
 #-----------Sam file to sorted mapped bam file----------------
 ref=/mnt/rds/genetics01/JinLab/xww/Reference_Index/$genome/$genome.fa.fai
