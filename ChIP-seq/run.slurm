@@ -13,4 +13,4 @@ module load BEDTools/2.30.0-GCC-11.2.0
 module load MACS3/3.0.1-gfbf-2023a
 
 
-bash ./ChIP_SE.sh mm10 SRR11245551_1.fastq
+bash ./ChIP_SE.sh mm10
