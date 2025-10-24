@@ -1,6 +1,6 @@
 #!/bin/bash
 genome=$1
-file=$2
+fastq=$2
 
 # set the lib and chromosome size file
 lib=./lib
