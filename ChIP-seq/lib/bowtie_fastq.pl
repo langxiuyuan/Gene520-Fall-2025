@@ -2,7 +2,8 @@
 
 use strict;
 my $usage = "Usage:./bowtie_fastq.pl <genome> <cpu> <fastq>\n";
-my $bowtie = "/mnt/rds/genetics01/JinLab/xww/software/bowtie-1.1.2/bowtie"; 
+# my $bowtie = "/mnt/rds/genetics01/JinLab/xww/software/bowtie-1.1.2/bowtie"; 
+ my $bowtie = "/mnt/vstor/courses/gene520/ChIP-seq/software/bowtie/bowtie-1.1.2/bowtie";
 
 my ($genome, $cpu, $fq) = @ARGV;
 if(not defined $fq){
