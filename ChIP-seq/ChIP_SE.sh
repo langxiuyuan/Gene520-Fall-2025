@@ -2,7 +2,7 @@
 genome=$1
 fastq=$2
 
-lib=/mnt/jinstore/JinLab03/xxl1432/HiCorr_Deeploop/14.Gene520/Gene520-Fall-2025/ChIP-seq/lib
+lib=./lib
 
 chrom_size=$lib/$genome.chrom.sizes
 #--------map raw fastq file to reference genome----------------
