@@ -1,6 +1,6 @@
 #!/bin/bash
 genome=$1
-fastq=$2
+file=$2
 
 lib=./lib
 
