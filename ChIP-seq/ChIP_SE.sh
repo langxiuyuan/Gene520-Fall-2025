@@ -1,6 +1,5 @@
 #!/bin/bash
 genome=$1
-fastq=$2
 
 # set the lib and chromosome size file
 lib=./lib
@@ -9,7 +8,7 @@ chrom_size=$lib/$genome.chrom.sizes
 #--------map raw fastq file to reference genome----------------
 
 for file in `ls *.fastq`;do
-    perl $lib/bowtie_fastq.pl mm10 8 $fastq # fastq --> sam
+    perl $lib/bowtie_fastq.pl mm10 8 $file # fastq --> sam
 done
 
 #-----------Sam file to sorted mapped bam file----------------
