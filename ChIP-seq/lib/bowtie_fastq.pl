@@ -18,7 +18,8 @@ if($genome eq "hg18"){
 }elsif($genome eq "hg19"){
 	$bowtie_index ="/home/xww/file_code/ref/hg19/genome";
 }elsif($genome eq "mm10"){
-	$bowtie_index ="/home/xww/file_code/ref/mm10/mm10";
+	# $bowtie_index ="/home/xww/file_code/ref/mm10/mm10";
+	$bowtie_index = "/mnt/vstor/courses/gene520/ChIP-seq/Ref/mm10_bowtie_index/mm10";
 }else{
         die("Error: Genome is not right!\n$usage");
 }
