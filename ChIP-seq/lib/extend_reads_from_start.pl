@@ -23,7 +23,7 @@ if($genome eq "hg19"){
         }
         close(IN);
 }elsif($genome eq "mm10"){
-	open(IN,"/home/xww/file_code/ChIP-seq/mm10.chrom.sizes") || die("Error: Cannot open mm10 chrom.sizes\n");
+	open(IN,"/mnt/vstor/courses/gene520/ChIP-seq/Ref/mm10_bowtie_index/mm10.chrom.sizes") || die("Error: Cannot open mm10 chrom.sizes\n");
         while(my $line = <IN>){
                 chomp $line;
                 my ($chr, $size) = split "\t", $line;
