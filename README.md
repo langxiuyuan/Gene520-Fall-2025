@@ -1,12 +1,5 @@
 # Gene520-Fall-2025
 
-
-# 💻 Scripts
-
-This repository contains a curated collection of scripts and utility tools that I have used throughout my research. These scripts are primarily geared toward data processing tasks related to Hi-C, RNA-seq, and ChIP-seq.
-
-
-
 # Linux Commands 
 
 |Command| Description | Options| Examples |
@@ -36,7 +29,7 @@ This repository contains a curated collection of scripts and utility tools that 
 
 
 
-# HPC Command Line
+# HPC Commands
 
 |Command| Description |
 | --------------- | ----------------- |
