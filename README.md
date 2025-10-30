@@ -11,8 +11,8 @@
 |`rm`| Remove files and directories.	 | `-r`: Remove directories recursively <br> `-f`: Force removal without confirmation.|`rm file.txt`  deletes the file named "file.txt".<br> `rm -r my_directory` deletes the directory "my_directory" and its contents. <br> `rm -f file.txt` forcefully deletes the file "file.txt" without confirmation. |
 |`cp` | Copy files and directories| `-r`: Copy directories recursively. |`cp -r directory destination`  copies the directory "directory" and its contents to the specified destination. <br> `cp file.txt destination`  copies the file "file.txt" to the specified destination. | 
 |`mv` | Move/rename files and directories.|  |`mv file.txt new_name.txt` renames the file "file.txt" to "new_name.txt". <br> `mv file.txt directory` moves the file "file.txt" to the specified directory. | 	
-|`ln`|Create a symbolic link (symlink) to a file or directory |  | unlink symlink.txt: removes the file or symbolic link named symlink.txt | 
-|`unlink`| Remove a single file or symbolic link (cannot remove directories) |`-s`: symbolic link | `ln -s /path/to/original.txt ./`: in the current order, creates a symlink pointing to original.txt | 
+|`ln`|Create a symbolic link (symlink) to a file or directory |  | `-s`: symbolic link | `ln -s /path/to/original.txt ./`: in the current order, creates a symlink pointing to original.txt | 
+|`unlink`| Remove a single file or symbolic link (cannot remove directories) |unlink symlink.txt: removes the file or symbolic link named symlink.txt |  
 |`cat`| View the contents of a file.	 |	| `cat file.txt`  displays the contents of the file "file.txt". |
 |`grep`| used to search for specific patterns or regular expressions in text files or streams and display matching lines.| `^`: match to the beginning of the line | `grep "hello" file.txt` search "hello" in file.txt <br> `grep ^@ file.txt`: Match lines that start with @| 
 |`wc`| word count |`-l`: count only the number of lines | `wc -l file.txt`: Count how many lines are in file.txt | 
