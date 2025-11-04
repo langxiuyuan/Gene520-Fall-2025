@@ -23,7 +23,7 @@
 |`sort`|sort lines of txt files| `-k`: Specify sort key <br> `-n`: Numeric sort <br> `-V`: Version sort (comparing v1.2 vs v1.10) | `sort -k 2,2n file.txt` Sort by second column as numbers. <br> `sort -k 2,2V file.txt`: Sort by first column using version comparison. | 
 |`cut`|Extract specific columns or sections from each line of a file | `-f`: select fields (columns)| `cut -f1,3 file.txt` extracts column 1 and 3 from a tab-delimited file|
 |`awk`|A powerful text-processing tool that scans input line by line, splits into columns, and performs actions such as filtering, printing, and calculations | `$1, $2`: access specific fields <br> `$0`: access the entire line <br>  | `awk '{print $1}'` file.txt : prints first column <br>  `awk '$3==5 {print $0}'` file.txt : prints entire line where third column equals 5 | 
-| `*` | wildcard that matches any number of any characters|   | `ls *fastq`: lists all files ending with “fastq”, such as SRR123.fastq, data_trimmed.fastq |
+| `*` | wildcard that matches any number of any characters|   | `ls *fastq`: lists all files ending with fastq, such as SRR123.fastq, data_trimmed.fastq |
 
 
 
