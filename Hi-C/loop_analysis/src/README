@@ -1,0 +1,19 @@
+Step1:
+
+from the fragment pairs level:
+
+In this folder is all of your merged fragment pairs. (inward, outward, samestrand, trans)
+
+Because each of your cell will generate each type of them. You can just 'cat' each types together to generate only one in, out,same, trans.
+
+
+./count.sh name genome
+
+Step2:
+
+The folder will generate anchor_loop.$name file and anchor_loop.trans which you would use to do the normalization. 
+
+so the other three you are able to run as previous( input are same)
+
+
+
