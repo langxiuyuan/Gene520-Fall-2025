@@ -10,6 +10,7 @@
 module load Perl/5.30.0-GCCcore-8.3.0
 module load SAMtools/1.11-GCC-10.2.0
 module load BEDTools/2.30.0-GCC-11.2.0
+module load Python/3.8.6-GCCcore-10.2.0
 
 
 bash ./1.mapping_hic_qc_hg19.sh
