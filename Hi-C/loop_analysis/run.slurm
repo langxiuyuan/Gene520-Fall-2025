@@ -14,3 +14,4 @@ module load Python/3.8.6-GCCcore-10.2.0
 
 
 bash ./1.mapping_hic_qc_hg19.sh
+bash ./2.hic.sh
