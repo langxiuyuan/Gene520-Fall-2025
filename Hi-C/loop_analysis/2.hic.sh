@@ -15,7 +15,7 @@ frag_2_anchor=/mnt/vstor/courses/gene520/Hi-C/ref/hg19_GATC_GANTC/frag.2.anchor
 
 # Assign frag to anchor
 cat $cis |  $lib/fragdata_to_anchordata.pl - $ref/${genome}_arima_frag_2_anchor | python3 $lib/get_dist.py $anchorbed | python3 $lib/remove.blacklist.py $ref/${genome}_5kb_anchors_blacklist > ${expt}_end_loop.cis.rmbl
-cat $trans |  $lib/fragdata_to_anchordata.pl - $ref/${genome}_arima_frag_2_anchor | $lib/remove.blacklist.py $ref/${genome}_5kb_anchors_blacklist  > ${expt}_end_loop.rmbl.trans
+cat $trans |  $lib/fragdata_to_anchordata.pl - $ref/${genome}_arima_frag_2_anchor | python3 $lib/remove.blacklist.py $ref/${genome}_5kb_anchors_blacklist  > ${expt}_end_loop.rmbl.trans
 
 # generate .hic file
 $lib/merge_sorted_anchor_loop.pl ${expt}_end_loop.cis.rmbl ${expt}_end_loop.rmbl.trans > ${expt}.merged.raw.cis.trans
