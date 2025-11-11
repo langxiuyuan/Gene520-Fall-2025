@@ -8,7 +8,7 @@ software=./software
 cis=human_Beta_cells_end_loop.cis.rmbl
 expt=human_Beta_cells_end_loop
 
-$lib/1.frag.to.bin.merge.from.loop_V2.pl /mnt/rds/genetics01/JinLab/xww/Project/stag2KO/TAD/ref/hg19.2digest.anchor.2.bin.40k $cis > $cis.2.40kb
+$lib/1.frag.to.bin.merge.from.loop_V2.pl /mnt/vstor/courses/gene520/Hi-C/ref/TAD_ref/hg19.2digest.anchor.2.bin.40k $cis > $cis.2.40kb
 
 for i in {1..22} X Y;do 
 grep chr$i\_ $cis.2.40kb >chr$i.bin_loop 
