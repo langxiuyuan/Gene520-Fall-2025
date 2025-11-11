@@ -44,17 +44,17 @@ done
 
 ##
 
-$lib/3.generate.correlation.matrix.r $name $res hg19 ${PWD}
+Rscript $lib/3.generate.correlation.matrix.r $name $res hg19 ${PWD}
 
 
 ##
 
-$lib/4.generate.chr.matrix_component.r $name $res hg19
+Rscript $lib/4.generate.chr.matrix_component.r $name $res hg19
 
 wait
 ##
 
-$lib/5.generate.score.file.improve.sh hg19 ${PWD} $res
+bash $lib/5.generate.score.file.improve.sh hg19 ${PWD} $res
 
 wait
 
@@ -62,7 +62,7 @@ wait
 
 mkdir ${name}_fig
 
-$lib/6.plot.one.component.improved.r $name $res hg19 ${PWD} ${name}_fig
+Rscript $lib/6.plot.one.component.improved.r $name $res hg19 ${PWD} ${name}_fig
 # $lib/6.plot.component.two.improved.r $name $res hg19 ${PWD} ${name}_fig
 # $lib/6.plot.component.three.improved.r $name $res hg19 ${PWD} ${name}_fig
 
