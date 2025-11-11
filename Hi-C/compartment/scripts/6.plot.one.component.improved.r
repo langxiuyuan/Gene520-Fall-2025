@@ -22,7 +22,8 @@ if(bin=='500k' && genome=='hg19'){
 #       bin_path_name="/mnt/rstor/genetics/JinLab/ssz20/zshanshan/heatmap_for_cis/hg19_name"
 
 	# bin_path="/mnt/rds/genetics01/JinLab/xww/low.resolution/bin_path/hg19"
-	bin_path="/mnt/jinstore/JinLab03/xxl1432/Reference/HiC/low_resolution/bin_path/hg19"
+	# bin_path="/mnt/jinstore/JinLab03/xxl1432/Reference/HiC/low_resolution/bin_path/hg19"
+	bin_path="/mnt/vstor/courses/gene520/Hi-C/ref/bin_path/hg19"
         bin_name=paste(bin_path,bin,paste(chr_lis,'.bin',sep=''),sep='/')
 }
 
