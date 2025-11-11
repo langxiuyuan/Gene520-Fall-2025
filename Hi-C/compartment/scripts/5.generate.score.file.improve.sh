@@ -3,7 +3,7 @@
 genome=$1
 #path=/mnt/rstor/genetics/JinLab/ssz20/zshanshan/heatmap_for_cis/
 # path=/mnt/jinstore/JinLab01/ssz20/zshanshan/heatmap_for_cis/
-path=./scripts
+path=../scripts
 # myPath=/mnt/jinstore/JinLab03/xxl1432/Reference/HiC/low_resolution/TSS.file/
 myPath=/mnt/vstor/courses/gene520/Hi-C/ref/TSS.file
 outpath=$2
