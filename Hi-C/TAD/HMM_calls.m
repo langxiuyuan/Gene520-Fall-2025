@@ -1,9 +1,9 @@
 clear
 clc
 # change the line 9 and 77
-addpath(genpath('/mnt/jinstore/JinLab03/xxl1432/Software/xxl244_domaincall_software/required_modules/HMMall/')); 
-addpath(genpath('/mnt/jinstore/JinLab03/xxl1432/Software/xxl244_domaincall_software/required_modules/pmtk3-2april2011/')); 
-addpath(genpath('/mnt/jinstore/JinLab03/xxl1432/Software/xxl244_domaincall_software/required_modules/order'));
+addpath(genpath('/mnt/vstor/courses/gene520/Hi-C/ref/required_modules/HMMall/')); 
+addpath(genpath('/mnt/vstor/courses/gene520/Hi-C/ref/required_modules/pmtk3-2april2011/')); 
+addpath(genpath('/mnt/vstor/courses/gene520/Hi-C/ref/required_modules/order'));
 
 minaic = 100000000;
 filename = 'human_Beta_cells_end_loop.sorted.DI';
