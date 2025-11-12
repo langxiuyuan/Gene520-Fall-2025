@@ -5,6 +5,7 @@ args = commandArgs(trailingOnly=TRUE)
 #parameter 2: bin
 #output: matrix for heatmap; heatmap.png; matrix.component
 #library(gplots)
+options(bitmapType = "cairo")
 cell_type=args[1]
 bin=args[2]
 genome=args[3]
