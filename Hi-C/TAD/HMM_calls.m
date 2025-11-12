@@ -6,7 +6,7 @@ addpath(genpath('/mnt/jinstore/JinLab03/xxl1432/Software/xxl244_domaincall_softw
 addpath(genpath('/mnt/jinstore/JinLab03/xxl1432/Software/xxl244_domaincall_software/required_modules/order'));
 
 minaic = 100000000;
-filename = 'Endoderm_WT_45pct_end_loop.sorted.DI';
+filename = 'human_Beta_cells_end_loop.sorted.DI';
 data = load(filename);
 prior0    = [0.33 0.33 0.33];
 transmat0 = [0.33 0.33 0.33
@@ -74,5 +74,5 @@ final_g(:,3) = best_g3(ind,:)';
 final_aic = aic(ind); minaic = min(aic);
 
 states = [final_p final_d final_g];
-file =  'Endoderm_WT_45pct_end_loop.sorted_out.DI';
+file =  'human_Beta_cells_end_loop.sorted_out.DI';
 save (file,'aic','ind','states','-ASCII');      
