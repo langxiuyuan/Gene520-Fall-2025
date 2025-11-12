@@ -4,6 +4,7 @@ args = commandArgs(trailingOnly=TRUE)
 #parameter 1: cell type
 #parameter 2: bin
 #output: matrix for heatmap; heatmap.png; matrix.component
+options(bitmapType = "cairo")
 cell_type=args[1]
 bin=args[2]
 genome=args[3]
