@@ -1,5 +1,6 @@
 #!/usr/bin/env Rscript
 args = commandArgs(trailingOnly=TRUE)
+options(bitmapType = "cairo")
 cell_type=args[1]
 bin=args[2]
 genome=args[3]
