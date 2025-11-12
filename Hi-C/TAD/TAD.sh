@@ -26,7 +26,7 @@ sed -i 's/Y/24/g' $expt.DI
 sort -k 1,1n -k2,2n -k 3,3n $expt.DI > $expt.sorted.DI
 
 # HMM (matlab on exon)
-nice matlab -nodisplay -nosplash -nodesktop < HMM_calls.m > dumpfile &
+nice matlab -nodisplay -nosplash -nodesktop < HMM_calls.m > dumpfile
 # nice /usr/local/matlab/R2016b/bin/matlab -nodisplay -nosplash -nodesktop < HMM_calls_50M.m > dumpfile &
 # nice /usr/local/matlab/R2016b/bin/matlab -nodisplay -nosplash -nodesktop < HMM_calls_100M.m > dumpfile &
 # nice /usr/local/matlab/R2016b/bin/matlab -nodisplay -nosplash -nodesktop < HMM_calls_200M.m > dumpfile &
