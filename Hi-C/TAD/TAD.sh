@@ -32,15 +32,15 @@ nice matlab -nodisplay -nosplash -nodesktop < HMM_calls.m > dumpfile
 # nice /usr/local/matlab/R2016b/bin/matlab -nodisplay -nosplash -nodesktop < HMM_calls_200M.m > dumpfile &
 
 
-# $software/perl_scripts/file_ends_cleaner.pl $expt.sorted_out.DI $expt.DI | $software/perl_scripts/converter_7col.pl > $expt.hmm_7colfile &
+# $software/perl_scripts/file_ends_cleaner.pl $expt.sorted_out.DI $expt.DI | $software/perl_scripts/converter_7col.pl > $expt.hmm_7colfile 
 
-$software/file_ends_cleaner.pl $expt.sorted_out.DI $expt.sorted.DI | $software/converter_7col.pl > $expt.hmm_7colfile &
+$software/file_ends_cleaner.pl $expt.sorted_out.DI $expt.sorted.DI | $software/converter_7col.pl > $expt.hmm_7colfile 
 sed -i 's/chr24/chrY/g; s/chr23/chrX/g' $expt.hmm_7colfile
 
 for i in {1..22} X Y;do
         grep -w chr$i $expt.hmm_7colfile >chr$i.hmm_7colfile;
         $software/hmm_probablity_correcter.pl chr$i.hmm_7colfile 2 0.99 20000 | $software/hmm-state_caller.pl failfile_chr$i chr$i | $software/hmm-state_domains.pl >chr$i.finaldomaincalls;
-done &
+done 
 
 # for i in {1..22} X Y;do cat ./chr$i.finaldomaincalls >> ${expt}all.domain.bed; done
 
