@@ -11,6 +11,7 @@ module load Perl/5.30.0-GCCcore-8.3.0
 module load SAMtools/1.11-GCC-10.2.0
 module load BEDTools/2.30.0-GCC-11.2.0
 module load Python/3.8.6-GCCcore-10.2.0
+module load R/4.4.2-gfbf-2024a
 
 
 bash ./1.hg19_run.compart_200k.sh
